@@ -1,0 +1,91 @@
+C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker build -t sanchaym/devops
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+Usage:  docker buildx build [OPTIONS] PATH | URL | -
+
+Start a build
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker build -t sanchaym/devops:1
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+Usage:  docker buildx build [OPTIONS] PATH | URL | -
+
+Start a build
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker build -t sanchaym/devops:1 .
+[+] Building 38.2s (8/8) FINISHED                                                                                                                                                                            docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                                                                                                                                         0.1s
+ => => transferring dockerfile: 111B                                                                                                                                                                                         0.0s 
+ => [internal] load metadata for docker.io/library/tomcat:9                                                                                                                                                                  5.3s
+ => [auth] library/tomcat:pull token for registry-1.docker.io                                                                                                                                                                0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                            0.0s
+ => => transferring context: 2B                                                                                                                                                                                              0.0s 
+ => [internal] load build context                                                                                                                                                                                            0.2s 
+ => => transferring context: 2.19kB                                                                                                                                                                                          0.1s 
+ => [1/2] FROM docker.io/library/tomcat:9@sha256:8299f3e2f559f57c683a38ff903b0caff1d789a2932686d30422f9dcd99c130e                                                                                                           31.7s 
+ => => resolve docker.io/library/tomcat:9@sha256:8299f3e2f559f57c683a38ff903b0caff1d789a2932686d30422f9dcd99c130e                                                                                                            0.1s 
+ => => sha256:865114aeca46bdfb59bc4a11acec4a5b01ad80ffd860c249133238f6a7bb56ed 31.53MB / 31.53MB                                                                                                                            12.1s
+ => => sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0B / 32B                                                                                                                                     32.3s
+ => => sha256:bbbc5226420a6c0ab4b1675bdec54096bacd399b3d607180a288bdd70a2b740a 139B / 139B                                                                                                                                   1.3s 
+ => => sha256:91e6cc55403ad09f9aeca15ab95bf547ad0b78be2b665c486beef7161150987d 2.28kB / 2.28kB                                                                                                                               1.5s 
+ => => sha256:a10b6847b9f1913a9d34980e0354787e49b068cdbdd78c70bab054c6cfbd1660 157.59MB / 157.59MB                                                                                                                          26.8s
+ => => sha256:dcc1c5ea3c7d921e35f64dce04af1c8a2cd97954281eb6af66f6067f6c2c319b 158B / 158B                                                                                                                                   0.7s
+ => => sha256:8dbbbc6af9dc7b3eec20b35797f66551a17f035a85f020fc99a0457dd268aae8 22.94MB / 22.94MB                                                                                                                            14.6s 
+ => => sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040 29.75MB / 29.75MB                                                                                                                            17.8s 
+ => => extracting sha256:5a7813e071bfadf18aaa6ca8318be4824a9b6297b3240f2cc84c1db6f4113040                                                                                                                                    1.5s 
+ => => extracting sha256:8dbbbc6af9dc7b3eec20b35797f66551a17f035a85f020fc99a0457dd268aae8                                                                                                                                    1.0s 
+ => => extracting sha256:a10b6847b9f1913a9d34980e0354787e49b068cdbdd78c70bab054c6cfbd1660                                                                                                                                    2.2s 
+ => => extracting sha256:dcc1c5ea3c7d921e35f64dce04af1c8a2cd97954281eb6af66f6067f6c2c319b                                                                                                                                    0.0s 
+ => => extracting sha256:91e6cc55403ad09f9aeca15ab95bf547ad0b78be2b665c486beef7161150987d                                                                                                                                    0.0s 
+ => => extracting sha256:bbbc5226420a6c0ab4b1675bdec54096bacd399b3d607180a288bdd70a2b740a                                                                                                                                    0.0s 
+ => => extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1                                                                                                                                    0.0s 
+ => => extracting sha256:865114aeca46bdfb59bc4a11acec4a5b01ad80ffd860c249133238f6a7bb56ed                                                                                                                                    0.9s 
+ => [2/2] COPY **/*.war /usr/local/tomcat/webapps/maven-web-app.war                                                                                                                                                          0.3s 
+ => exporting to image                                                                                                                                                                                                       0.4s 
+ => => exporting layers                                                                                                                                                                                                      0.2s 
+ => => exporting manifest sha256:24a8f469f2d19440630317fd9f642b46627d5177ad98cc66c5fde41bc93af6f8                                                                                                                            0.0s 
+ => => exporting config sha256:6e20a1446cf5d3d0b495907942c04d33a2044a8fa108032f1b92ce2b55516479                                                                                                                              0.0s
+ => => exporting attestation manifest sha256:10945d026b81d937884357f50600696cd07d43201c3a80973531a76f55e0c0f2                                                                                                                0.0s 
+ => => exporting manifest list sha256:6cfa1bef8bf8b36ae19ebe047210ffb08ae267e0db0205aa6fdf0288b35d04c0                                                                                                                       0.0s 
+ => => naming to docker.io/sanchaym/devops:1                                                                                                                                                                                 0.0s 
+ => => unpacking to docker.io/sanchaym/devops:1                                                                                                                                                                              0.1s 
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker images
+REPOSITORY                   TAG       IMAGE ID       CREATED          SIZE
+sanchaym/devops              1         6cfa1bef8bf8   15 seconds ago   785MB
+kavitha468/my-apache-image   latest    4b02d3b60064   11 days ago      312MB
+my-apache-image              latest    4b02d3b60064   11 days ago      312MB
+sanchaym/my-apache-image     latest    4b02d3b60064   11 days ago      312MB
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker run -d -p 8085:8080 --name demoapp 6cfa1bef8bf8                                            
+c2c7c9c6e729bb110babcaae381c7eaf7d8bdbecaea560ef5648df620ce9179a
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker run -it exec /bin/bash
+Unable to find image 'exec:latest' locally
+docker: Error response from daemon: pull access denied for exec, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker ps
+CONTAINER ID   IMAGE          COMMAND             CREATED              STATUS              PORTS                    NAMES
+c2c7c9c6e729   6cfa1bef8bf8   "catalina.sh run"   About a minute ago   Up About a minute   0.0.0.0:8085->8080/tcp   demoapp
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker run -it sanchaym/devops:1  /bin/bash
+root@3126745e145d:/usr/local/tomcat# ls
+bin  BUILDING.txt  conf  CONTRIBUTING.md  filtered-KEYS  lib  LICENSE  logs  native-jni-lib  NOTICE  README.md  RELEASE-NOTES  RUNNING.txt  temp  upstream-KEYS  webapps  webapps.dist  work
+root@3126745e145d:/usr/local/tomcat# exit
+exit
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker exec -it c2c7c9c6e729
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Execute a command in a running container
+PS C:\Users\sanch\OneDrive\Desktop\SANCHAY\Academic\DevOps\Git\my-web> docker exec -it c2c7c9c6e729 /bin/bash
+root@c2c7c9c6e729:/usr/local/tomcat# ls
+bin  BUILDING.txt  conf  CONTRIBUTING.md  filtered-KEYS  lib  LICENSE  logs  native-jni-lib  NOTICE  README.md  RELEASE-NOTES  RUNNING.txt  temp  upstream-KEYS  webapps  webapps.dist  work
+root@c2c7c9c6e729:/usr/local/tomcat# cd webapps
+root@c2c7c9c6e729:/usr/local/tomcat/webapps# ls
+maven-web-app  maven-web-app.war
+root@c2c7c9c6e729:/usr/local/tomcat/webapps#
+
+so output will be at 8080:maven-web-app
+
+
