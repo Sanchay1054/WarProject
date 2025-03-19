@@ -24,7 +24,7 @@ stage('build to images') {
 stage('push to hub') {
             steps {
                script{
-                 withDockerRegistry(credentialsId: 'Docker', url: 'https://index.docker.io/v1/') {
+                 withDockerRegistry(credentialsId: 'docker', url: 'https://index.docker.io/v1/') {
                   sh 'docker push sanchaym/simplewebapp'
                }
             }
