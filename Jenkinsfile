@@ -27,7 +27,7 @@ stage('push to hub') {
                   bat 'docker push sanchaym/simplewebapp'
                }
             }
-            }
+ 	}
 }
 }
 }
