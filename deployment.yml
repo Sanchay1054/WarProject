@@ -17,8 +17,8 @@ spec:
         apptype: web-backend
     spec:
       containers:
-      - name: my-app
-        image: 
+      - name: my-web
+        image: simplewebapp
         ports:
         - containerPort: 9000
 
