@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: my-web
-        image: simplewebapp
+        image: sanchaym/simplewebapp:latest
         ports:
         - containerPort: 9001
 
